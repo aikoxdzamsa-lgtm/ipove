@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Account — იპოვე</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23155e43'/%3E%3Ccircle cx='18' cy='18' r='7.5' fill='none' stroke='white' stroke-width='3'/%3E%3Cpath d='m23.5 23.5 7 7' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="account.css">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body class="account-page">
+  <svg class="icon-sprite" aria-hidden="true">
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4.5 4.5"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="M3 9 4.5 3h15L21 9"/><path d="M3 9h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 21v-7h6v7"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></symbol>
+    <symbol id="i-logout" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5M21 12H9"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="7.5" cy="15.5" r="4.5"/><path d="m11 12 9-9M17 4l3 3M14 7l3 3"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v5M12 16h.01"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M20.5 3.5A10.4 10.4 0 0 0 3.2 16.1L2 22l6.1-1.2A10.4 10.4 0 0 0 20.5 3.5z"/><path d="M8.6 7.4c.2-.4.4-.4.7-.4h.5c.2 0 .4 0 .5.4l.8 1.9c.1.2 0 .4-.1.6l-.6.7c-.1.2-.2.3 0 .6.3.5.7 1 1.2 1.5.5.4 1 .8 1.5 1 .2.1.4.1.6-.1l.6-.7c.2-.2.4-.2.6-.1l1.8.9c.2.1.3.2.3.4 0 .4-.1 1.1-.5 1.5-.4.4-1 .7-1.7.7-.6 0-1.4-.2-2.3-.6-1.2-.5-2.3-1.3-3.2-2.2-.9-.9-1.7-2-2.1-3.2-.4-.9-.5-1.7-.4-2.3 0-.4.3-.8.6-1z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3 7 7 .3-5.5 4.7 2 7-6.5-4L5.5 21l2-7L2 9.3 9 9Z"/></symbol>
+  </svg>
+
+  <header class="acc-head">
+    <a class="brand" href="index.html" aria-label="იპოვე — მთავარი">
+      <span class="brand-mark"><svg class="icon"><use href="#i-search"/></svg></span>
+      <span class="brand-word">იპოვე<span class="brand-dot">.</span></span>
+    </a>
+    <div class="acc-head-actions">
+      <a class="acc-back" href="index.html"><svg class="icon"><use href="#i-arrow-left"/></svg><span data-i18n="back">Back to site</span></a>
+      <a class="acc-back" href="premium.html"><span data-i18n="pricing">Plans</span><svg class="icon"><use href="#i-arrow-right"/></svg></a>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ka">ქარ</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="acc-main">
+    <section class="acc-hero">
+      <span class="section-kicker" data-i18n="kicker">Business account</span>
+      <h1 data-i18n-html="title">Manage your business<br><em>and your placement.</em></h1>
+      <p data-i18n="lead">Create a profile, get your first month free, and keep your placement active with a one-time code.</p>
+    </section>
+
+    <section class="acc-auth" id="authView" hidden>
+      <div class="acc-card acc-auth-card">
+        <div class="acc-tabs" role="tablist">
+          <button type="button" class="active" data-mode="login" data-i18n="loginTab">Sign in</button>
+          <button type="button" data-mode="register" data-i18n="registerTab">Register</button>
+        </div>
+
+        <div class="google-auth-wrap" id="googleAuthWrap">
+          <button type="button" class="google-auth-btn" id="googleCustomBtn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+            </svg>
+            <span data-i18n="continueWithGoogle">Continue with Google</span>
+          </button>
+        </div>
+
+        <div class="acc-divider"><span data-i18n="or">or</span></div>
+
+        <form id="authForm" novalidate>
+          <label class="field"><span data-i18n="email">Email</span><input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+          <label class="field"><span data-i18n="password">Password</span><input name="password" type="password" autocomplete="current-password" required minlength="8" maxlength="72" placeholder="••••••••"></label>
+          <p class="acc-hint" data-i18n="passwordHint">At least 8 characters.</p>
+          <div class="acc-form-message" id="authMessage" role="status" aria-live="polite"></div>
+          <button class="primary-button acc-submit" id="authSubmit" type="submit"><span data-i18n="continue">Continue</span><svg class="icon"><use href="#i-arrow-right"/></svg></button>
+        </form>
+      </div>
+    </section>
+
+    <section class="acc-dashboard" id="dashboardView" hidden>
+      <!-- Expiration Banner (shown when placement expired) -->
+      <div class="acc-expired-banner" id="expiredBanner" hidden>
+        <div class="banner-title">
+          <svg class="icon"><use href="#i-alert"/></svg>
+          <b data-i18n="expiredBannerTitle">Your placement has expired</b>
+        </div>
+        <p data-i18n="expiredBannerText">Your business is currently hidden from the catalog. Choose a plan and enter your activation code below to restore it and get featured at the top of your category.</p>
+        <div class="banner-actions">
+          <a class="whatsapp-btn" id="expiredWhatsappBtn" href="https://wa.me/" target="_blank" rel="noopener">
+            <svg class="icon"><use href="#i-whatsapp"/></svg>
+            <span data-i18n="orderViaWhatsapp">Order code via WhatsApp</span>
+          </a>
+          <a class="whatsapp-btn" style="background:var(--green)" href="premium.html"><span data-i18n="choosePlans">Choose a plan</span></a>
+        </div>
+      </div>
+
+      <div class="acc-bar">
+        <div>
+          <span class="acc-bar-label" data-i18n="signedIn">Signed in as</span>
+          <b id="userEmail">—</b>
+        </div>
+        <nav class="acc-switch" aria-label="Account sections">
+          <a href="account.html" id="tabPlans" data-i18n="tabPlans">Plans &amp; code</a>
+          <a href="account.html#business" id="tabBusiness" data-i18n="tabBusiness">My business</a>
+        </nav>
+        <button class="ghost-button" type="button" id="logoutButton"><svg class="icon"><use href="#i-logout"/></svg><span data-i18n="logout">Sign out</span></button>
+      </div>
+
+      <div class="acc-grid single" id="accGrid">
+        <div class="acc-card" id="businessCard">
+          <div class="acc-card-head">
+            <span class="acc-icon"><svg class="icon"><use href="#i-store"/></svg></span>
+            <div>
+              <h2 data-i18n="businessTitle">Your business</h2>
+              <p data-i18n="businessDesc">Reviewed by the admin before it goes live.</p>
+            </div>
+          </div>
+
+          <form id="businessForm" novalidate>
+            <input type="hidden" name="id" value="">
+            <label class="field full"><span><span data-i18n="name">Business name</span> <i>*</i></span><input name="name" required minlength="2" maxlength="90"></label>
+            <div class="acc-row">
+              <label class="field"><span><span data-i18n="category">Category</span> <i>*</i></span><select name="category" required></select></label>
+              <label class="field"><span><span data-i18n="city">City</span> <i>*</i></span><select name="city" required></select></label>
+            </div>
+            <label class="field full"><span><span data-i18n="address">Neighborhood / address</span> <i>*</i></span><input name="neighborhood" required minlength="2" maxlength="90"></label>
+            <div class="acc-row">
+              <label class="field"><span><span data-i18n="phone">Phone</span> <i>*</i></span><input name="phone" type="tel" required minlength="6" maxlength="30" placeholder="+995 5XX XX XX XX"></label>
+              <label class="field"><span data-i18n="emailOptional">Email (optional)</span><input name="email" type="email" maxlength="120"></label>
+            </div>
+            <label class="field full" id="websiteField">
+              <span><span data-i18n="website">Website or social link</span> <small class="acc-lock" id="websiteLock"><svg class="icon"><use href="#i-lock"/></svg><span data-i18n="linkLocked">Available after payment</span></small></span>
+              <input name="website" type="url" maxlength="220" placeholder="https://" disabled>
+            </label>
+            <label class="field full">
+              <span><span data-i18n="description">What do you offer?</span> <i>*</i></span>
+              <textarea name="description" required minlength="10" maxlength="500" rows="3"></textarea>
+            </label>
+            <div class="acc-form-message" id="businessMessage" role="status" aria-live="polite"></div>
+            <button class="primary-button acc-submit" id="businessSubmit" type="submit"><span data-i18n="saveBusiness">Save business</span><svg class="icon"><use href="#i-arrow-right"/></svg></button>
+            <p class="acc-status" id="businessStatus"></p>
+          </form>
+        </div>
+
+        <div class="acc-side" id="accSide">
+          <div class="acc-card">
+            <div class="acc-card-head">
+              <span class="acc-icon"><svg class="icon"><use href="#i-calendar"/></svg></span>
+              <div>
+                <h2 data-i18n="placementTitle">Placement</h2>
+                <p data-i18n="placementDesc">Your current status and expiry date.</p>
+              </div>
+            </div>
+            <div class="acc-placement" id="placementSummary"></div>
+
+            <div class="acc-plans" id="accPlans">
+              <article class="acc-plan" data-months="1">
+                <b>1</b><span data-i18n="month">month</span><strong data-acc-price="1"></strong>
+              </article>
+              <article class="acc-plan featured" data-months="3">
+                <b>3</b><span data-i18n="months">months</span><strong data-acc-price="3"></strong>
+              </article>
+              <article class="acc-plan" data-months="12">
+                <b>12</b><span data-i18n="months">months</span><strong data-acc-price="12"></strong>
+              </article>
+            </div>
+
+            <a class="whatsapp-btn acc-whatsapp-order" id="planWhatsappBtn" href="https://wa.me/" target="_blank" rel="noopener">
+              <svg class="icon"><use href="#i-whatsapp"/></svg>
+              <span data-i18n="orderViaWhatsapp">Order code via WhatsApp</span>
+            </a>
+
+            <button class="primary-button acc-submit" id="trialButton" type="button">
+              <svg class="icon"><use href="#i-check"/></svg><span data-i18n="trialCta">1 month free</span>
+            </button>
+            <a class="primary-button acc-submit" id="viewSiteBtn" href="index.html" style="display:none;background:var(--green);margin-top:10px;text-decoration:none;">
+              <svg class="icon"><use href="#i-search"/></svg><span data-i18n="viewOnSite">View business on site</span>
+            </a>
+            <p class="acc-hint" id="trialHint"></p>
+          </div>
+
+          <div class="acc-card">
+            <div class="acc-card-head">
+              <span class="acc-icon"><svg class="icon"><use href="#i-key"/></svg></span>
+              <div>
+                <h2 data-i18n="codeTitle">Activation code</h2>
+                <p data-i18n="codeDesc">After payment you receive a one-time code. Enter it here.</p>
+              </div>
+            </div>
+            <form id="codeForm" novalidate>
+              <label class="field full"><span data-i18n="codeLabel">Code</span><input name="code" id="codeInput" autocomplete="off" placeholder="IPV-1M-XXXX-XXXX" spellcheck="false"></label>
+              <div class="acc-form-message" id="codeMessage" role="status" aria-live="polite"></div>
+              <button class="primary-button acc-submit" id="codeSubmit" type="submit"><span data-i18n="activate">Activate</span><svg class="icon"><use href="#i-arrow-right"/></svg></button>
+            </form>
+            <p class="acc-hint" data-i18n="codeHint">Each code works once and automatically activates the duration it was issued for (1, 3 or 12 months).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="account.js" defer></script>
+</body>
+</html>
